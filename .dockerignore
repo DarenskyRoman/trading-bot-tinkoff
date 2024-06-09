@@ -1,0 +1,6 @@
+*__pycache__/
+stats.db
+.gitignore
+.git/
+test*
+*.log

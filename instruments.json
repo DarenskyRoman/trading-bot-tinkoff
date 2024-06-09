@@ -1,0 +1,37 @@
+{
+    "instruments": [
+      {
+        "figi": "figi",
+        "strategy": {
+          "name": "sma",
+          "parameters": {
+            "long_ma": 2,
+            "short_ma": 1,
+            "quantity": 1
+          }
+        },
+        "statistics": {
+          "handler": "sqlite",
+          "parameters": {
+            "db_name": "stats.db"
+          }
+        }
+      },
+      {
+        "figi": "figi",
+        "strategy": {
+          "name": "test",
+          "parameters": {
+            "test_parameter": "test_parameter"
+          }
+        },
+        "statistics": {
+          "handler": "telegram",
+          "parameters": {
+            "token": "token",
+            "chat_id": "chat_id"
+          }
+        }
+      }
+    ]
+}
